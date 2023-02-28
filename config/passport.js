@@ -119,12 +119,12 @@ passport.use(
                     newUser.who = teacher;
                   } else if (student) {
                     newUser.who = student;
-                    if (!year) {
-                      messages.push('Please enter all details');
-                      return done(null, false, req.flash('error', messages));
-                    } else {
-                      newUser.year = year;
-                    }
+                    // if (!year) {
+                    //   messages.push('Please enter all details');
+                    //   return done(null, false, req.flash('error', messages));
+                    // } else {
+                    //   newUser.year = year;
+                    // }
                   } else {
                     newUser.who = '';
                   }
